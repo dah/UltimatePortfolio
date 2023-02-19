@@ -9,7 +9,7 @@ import CoreData
 
 class DataController:ObservableObject {
     let container: NSPersistentCloudKitContainer
-    
+    @Published var selectedFilter: Filter? = Filter.all
     
     init(inMemory: Bool = false) {
         container = NSPersistentCloudKitContainer(name: "Main")
