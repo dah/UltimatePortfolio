@@ -16,6 +16,8 @@
 		8E19089A29A2578B00CE88E4 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19089929A2578B00CE88E4 /* SidebarView.swift */; };
 		8E19089C29A2579800CE88E4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19089B29A2579800CE88E4 /* DetailView.swift */; };
 		8E19089E29A2C42A00CE88E4 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19089D29A2C42A00CE88E4 /* Filter.swift */; };
+		8E1908A029A2D30D00CE88E4 /* Issue-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19089F29A2D30D00CE88E4 /* Issue-CoreDataHelpers.swift */; };
+		8E1908A229A2D47E00CE88E4 /* Tag-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1908A129A2D47E00CE88E4 /* Tag-CoreDataHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		8E19089929A2578B00CE88E4 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		8E19089B29A2579800CE88E4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		8E19089D29A2C42A00CE88E4 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		8E19089F29A2D30D00CE88E4 /* Issue-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		8E1908A129A2D47E00CE88E4 /* Tag-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				8E19088829A2428200CE88E4 /* Assets.xcassets */,
 				8E19088A29A2428200CE88E4 /* UltimatePortfolio.entitlements */,
 				8E19088B29A2428200CE88E4 /* Preview Content */,
+				8E19089F29A2D30D00CE88E4 /* Issue-CoreDataHelpers.swift */,
+				8E1908A129A2D47E00CE88E4 /* Tag-CoreDataHelpers.swift */,
 			);
 			path = UltimatePortfolio;
 			sourceTree = "<group>";
@@ -157,7 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E19089E29A2C42A00CE88E4 /* Filter.swift in Sources */,
+				8E1908A229A2D47E00CE88E4 /* Tag-CoreDataHelpers.swift in Sources */,
 				8E19089529A242DA00CE88E4 /* Main.xcdatamodeld in Sources */,
+				8E1908A029A2D30D00CE88E4 /* Issue-CoreDataHelpers.swift in Sources */,
 				8E19089C29A2579800CE88E4 /* DetailView.swift in Sources */,
 				8E19089729A2458600CE88E4 /* DataController.swift in Sources */,
 				8E19089A29A2578B00CE88E4 /* SidebarView.swift in Sources */,
