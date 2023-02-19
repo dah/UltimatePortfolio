@@ -11,6 +11,8 @@
 		8E19088729A2428100CE88E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19088629A2428100CE88E4 /* ContentView.swift */; };
 		8E19088929A2428200CE88E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E19088829A2428200CE88E4 /* Assets.xcassets */; };
 		8E19088D29A2428200CE88E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E19088C29A2428200CE88E4 /* Preview Assets.xcassets */; };
+		8E19089529A242DA00CE88E4 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E19089329A242DA00CE88E4 /* Main.xcdatamodeld */; };
+		8E19089729A2458600CE88E4 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E19089629A2458600CE88E4 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,9 @@
 		8E19088829A2428200CE88E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E19088A29A2428200CE88E4 /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
 		8E19088C29A2428200CE88E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8E19089429A242DA00CE88E4 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		8E19089629A2458600CE88E4 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		8E19089829A254CF00CE88E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +57,14 @@
 		8E19088329A2428100CE88E4 /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				8E19089829A254CF00CE88E4 /* Info.plist */,
 				8E19088429A2428100CE88E4 /* UltimatePortfolioApp.swift */,
 				8E19088629A2428100CE88E4 /* ContentView.swift */,
 				8E19088829A2428200CE88E4 /* Assets.xcassets */,
 				8E19088A29A2428200CE88E4 /* UltimatePortfolio.entitlements */,
 				8E19088B29A2428200CE88E4 /* Preview Content */,
+				8E19089329A242DA00CE88E4 /* Main.xcdatamodeld */,
+				8E19089629A2458600CE88E4 /* DataController.swift */,
 			);
 			path = UltimatePortfolio;
 			sourceTree = "<group>";
@@ -139,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E19089529A242DA00CE88E4 /* Main.xcdatamodeld in Sources */,
+				8E19089729A2458600CE88E4 /* DataController.swift in Sources */,
 				8E19088729A2428100CE88E4 /* ContentView.swift in Sources */,
 				8E19088529A2428100CE88E4 /* UltimatePortfolioApp.swift in Sources */,
 			);
@@ -262,6 +272,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
@@ -269,6 +280,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -300,6 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
@@ -307,6 +320,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -354,6 +368,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8E19089329A242DA00CE88E4 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8E19089429A242DA00CE88E4 /* Main.xcdatamodel */,
+			);
+			currentVersion = 8E19089429A242DA00CE88E4 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8E19087929A2428100CE88E4 /* Project object */;
 }
